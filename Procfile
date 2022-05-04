@@ -1,0 +1,1 @@
+web: gunicorn tsutaerufriendly.asgi:app --worker-class uvicorn.workers.UvicornWorker

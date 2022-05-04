@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>ジャイヌ an app by astremo</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', path='/request_translate.js') }}"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2>ジャイヌbeta
+                </h2>
+            </a>
+
+            <a class="navbar-brand" href="https://github.com/astremo">
+                <div class="github">
+                    <button type="button" class="btn btn-secondary">
+                    <img src="{{ url_for('static', path='/resources/github.png') }}" width=20 alt="">GitHub</button>
+                </div>
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="form">
+        <div class="what">
+        <img src="{{ url_for('static', path='/resources/logo.png') }}" class="friendly" alt=""
+        width=29.5%/>
+
+        <p class ="description"> </p>
+
+        </div> <a href="https://www.google.com/search?q=diversity">
+        <img src="{{ url_for('static', path='/resources/diverse_people.png') }}" class="diversepeople" title="ダイバーシティーをサポートします" alt="ダイバーシティーをサポートします"
+        width=22%/></a>
+
+        <div class="translateform">
+        <h2 class="trytranslate">翻訳を試す</h2>
+
+        <form action="/translate" method="get"></form>
+        <p>
+        <textarea maxlength="256" class="form-control form-rounded"
+        id="translate">{{text_output}}</textarea>
+        </p>
+        <div class ="translatebtn">
+        <button type="button" onClick="getRequest()" class="btn btn-primary">翻訳</button>
+        </div>
+        </div>
+    </form>
+    </div>
+
+
+    <div class="principles">
+        <h2 class="principlestitle">ジャイヌについて</h2>
+
+        <img src="{{ url_for('static', path='/resources/first_box.png') }}" class="firstbox" alt=""
+        width=25%/>
+
+        <img src="{{ url_for('static', path='/resources/second_box.png') }}" class="secondbox" alt=""
+        width=25%/>
+
+        <img src="{{ url_for('static', path='/resources/third_box.png') }}" class="thirdbox" alt=""
+        width=25%/>
+
+        <p class ="firstboxdescription">
+          世界初アイヌ語翻訳のウェブアプリケーション！
+          AI翻訳モデルは提供しています。無料でモデルを利用できます。
+        </p>
+        <p class ="secondboxdescription">
+          アイヌとのコミュニケーションを支援しています。
+          話しやすくするためにカナを利用しています。
+        </p>
+        <p class ="thirdboxdescription">
+            アイヌとの交流とアイヌの文化を支援しています。
+        </p>
+
+        </div>
+
+        <div class="footer">
+        <nav class="navbar navbar-light bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h6>ジャイヌ © 2022 astremo</h6>
+                </a>
+            </div>
+        </nav>
+        </div>
+
+</body>
+
+</html>

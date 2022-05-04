@@ -1,0 +1,313 @@
+.mainbox
+{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.friendly
+{
+  position: absolute;
+  top: 10%;
+  left: 2.8%;
+}
+
+
+.description
+{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 1.8vw;
+    font-weight: 600;
+    color: #446B92;
+    max-width: 25%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .description {
+      display: none;
+    }
+    .mainbox {
+        display: none;
+    }
+    .what{
+        display: none;
+    }
+    .form {
+        height: 240px !important;
+        padding-bottom: 300px !important;
+    }
+    .translateform {
+        left:0px !important;
+        width: 100% !important;
+    }
+
+    .trytranslate{
+        left:10px !important;
+
+    }
+
+    .textarea {
+        left:0px !important;
+    }
+
+    .translatebtn{
+        left: 10% !important;
+        max-width: 100%;
+    }
+
+    .github{
+        display: none;
+    }
+
+    .diversepeople{
+        display: none;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .principles{
+        height: 80vw !important;
+    }
+
+  }
+
+.github{
+    display:box;
+}
+
+.diversepeople
+{
+  position: absolute;
+  bottom: 100%;
+  right: 20%;
+}
+
+textarea
+{
+    position: relative;
+    top: 30px;
+    left: 10%;
+    max-width:80%;
+    height: 12em !important;
+    resize: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea:focus {
+    outline: none !important;
+    border:4px solid #3A6089 !important;
+  }
+
+.trytranslate
+{
+    position: relative;
+    max-width: 80%;
+    top: 5%;
+    left: 10%;
+}
+
+.translatebtn
+{
+    position: relative;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+.form
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    max-height: 50%;
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
+.what
+{
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: scroll;
+    padding-bottom: 460px;
+}
+
+.translateform
+{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.principles
+{
+    height: 60vw;
+    overflow: scroll;
+}
+
+.principles .principlestitle
+{
+    position: relative;
+    top: 5%;
+    left: 2%;
+    max-width: 80%;
+}
+
+.principles p
+{
+    position: relative;
+    left: 0;
+    top: 70%;
+    outline-color: transparent !important;
+    outline-style: none !important;
+    display: inline-block;
+    line-height: 140%;
+    vertical-align: top;
+}
+
+.firstbox
+{
+  position: relative;
+  top: 70px;
+  left: 5%;
+}
+
+.principles .firstboxdescription
+{
+    position: relative;
+    top: 90px;
+    left: 5%;
+    font-size: 2.0vw;
+    font-weight: 600;
+    color: #446B92;
+    max-width: 25%;
+}
+
+.secondbox
+{
+  position: relative;
+  top: 70px;
+  left: 10%;
+}
+
+.principles .secondboxdescription
+{
+  position: relative;
+  top: 90px;
+  left: 10%;
+  font-size: 2.0vw;
+  font-weight: 600;
+  color: #446B92;
+  max-width: 25%;
+}
+
+.thirdbox
+{
+  position: relative;
+  top: 70px;
+  left: 15%;
+}
+
+.principles .thirdboxdescription
+{
+  position: relative;
+  top: 90px;
+  left: 15%;
+  font-size: 2.0vw;
+  font-weight: 600;
+  color: #446B92;
+  max-width: 25%;
+}
+
+.navbar {
+    background-color: #446B92 !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3A6089;
+    border-color: #3A6089
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2C537D;
+    border-color: #3A6089
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #3A6089;
+    border-color: #3A6089
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #2C537D;
+    border-color: #2C537D
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+}
+
+.btn-outline-primary {
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3A6089
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #3A6089;
+    border-color: #3A6089
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(58, 96, 137, 0.5)
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #fff;
+    background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3A6089;
+    border-color: #3A6089
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(58, 96, 137, 0.5)
+}
