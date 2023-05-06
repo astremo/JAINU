@@ -1,6 +1,6 @@
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.10.1+cpu
-Django==4.0
+Django
 fastapi==0.73.0
 pydantic==1.8.2
 starlette==0.17.1
